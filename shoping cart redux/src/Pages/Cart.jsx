@@ -1,12 +1,11 @@
-import React from 'react'
 
 function Cart() {
-  return (
-    <>
-    cart
-      
-    </>
-  )
+    return (
+        <>
+            cart
+
+        </>
+    )
 }
 
 export default Cart

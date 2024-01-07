@@ -1,0 +1,14 @@
+.navbar-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    margin: 0px 10px;
+
+}

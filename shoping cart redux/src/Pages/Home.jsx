@@ -1,13 +1,13 @@
-import React from 'react'
+
 
 function Home() {
-  return (
-    <>
+    return (
+        <>
 
-    home
-      
-    </>
-  )
+            home
+
+        </>
+    )
 }
 
 export default Home
