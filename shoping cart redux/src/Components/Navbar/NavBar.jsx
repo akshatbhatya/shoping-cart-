@@ -1,7 +1,15 @@
 
 import { Link } from 'react-router-dom'
 import "./NavBar.css"
+import { useSelector } from 'react-redux'
+
+
+
 function NavBar() {
+
+  const item=useSelector((state)=>state.cart)
+  
+
   return (
     <>
       <nav className='navbar-parent'>
@@ -16,7 +24,7 @@ function NavBar() {
 
         </div>
 
-        <span>cart Items:0</span>
+        <span>cart Items: {item.length} </span>
       </nav>
     </>
   )

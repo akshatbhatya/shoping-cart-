@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react"
 import "./Product.css"
-function Product() {
 
+
+
+import {useDispatch} from 'react-redux'
+import { addItem } from "../Store/CartSlice"
+function Product() {
+    
+const dispatch=useDispatch()
 
     const [products, setProduct] = useState([])
 
@@ -17,6 +23,7 @@ function Product() {
         }
         FetchData();
 
+    
     }, [])
     return (
 
@@ -31,7 +38,7 @@ function Product() {
                         <h4>: {product.description}</h4>
                         <h3>Price : {product.price}</h3>
 
-                        <button>Add To art</button>
+                        <button onClick={()=>dispatch(addItem(product))}>Add To art</button>
 
 
 
