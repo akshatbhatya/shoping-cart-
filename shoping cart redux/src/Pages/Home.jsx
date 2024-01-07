@@ -1,10 +1,11 @@
+import Product from "../Components/Products/Product"
 
 
 function Home() {
     return (
         <>
 
-            home
+            <Product/>
 
         </>
     )
