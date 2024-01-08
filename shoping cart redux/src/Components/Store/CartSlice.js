@@ -20,7 +20,6 @@ export const cartSlice = createSlice({
   },
 });
 
-console.log(initialState.cart.length);
 
 export const { addItem, removeItem } = cartSlice.actions;
 

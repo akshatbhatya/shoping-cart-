@@ -2,12 +2,19 @@
 import { Link } from 'react-router-dom'
 import "./NavBar.css"
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
 
 
 function NavBar() {
 
   const item=useSelector((state)=>state.cart)
+
+
+  useEffect(() => {
+    
+    console.log(item.length);
+  }, [item]);
   
 
   return (
@@ -24,7 +31,9 @@ function NavBar() {
 
         </div>
 
-        <span>cart Items: {item.length} </span>
+        {item.length > 0 && <span>Cart Items: {item.length}</span>}
+        {item.length === 0 && <span>Your cart is empty.</span>}
+  
       </nav>
     </>
   )
