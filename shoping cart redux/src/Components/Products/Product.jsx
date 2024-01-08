@@ -19,10 +19,8 @@ const dispatch=useDispatch()
             let response = await productData.json();
             setProduct(response)
 
-
         }
         FetchData();
-
     
     }, [])
     return (
@@ -39,8 +37,6 @@ const dispatch=useDispatch()
                         <h3>Price : {product.price}</h3>
 
                         <button onClick={()=>dispatch(addItem(product))}>Add To art</button>
-
-
 
                     </div>
                 })
